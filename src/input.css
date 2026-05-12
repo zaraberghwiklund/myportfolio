@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+    --font-zeyada: "Zeyada", cursive;
+    --font-playfair: "Playfair Display", serif;
+}
