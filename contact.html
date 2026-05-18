@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara Bergh Wiklund | Webbdesigner & webbutvecklare</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Zeyada&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <script src="src/menu.js" defer></script>
+ </head>
+ <body class="bg-[#F5EEE9]">
+    
+  <!-- Top Menu -->
+   <nav>
+    <ul class="justify-end text-md font-medium text-roboto items-center gap-6 px-6 mt-8 lg:px-14 hidden md:flex lg:flex">
+      <li><a href="index.html" class="text-[#554e4b] hover:text-[#867a74]">Hem</a></li>
+      <li><a href="projects.html" class="text-[#554e4b] hover:text-[#867a74]">Portfolio</a></li>
+    </ul>
+   </nav>
+    <!-- Open button (mobile) -->
+     <button id="menu-button" class="md:hidden fixed top-8 right-6 text-[#554e4b] cursor-pointer">
+      <svg width="22" height="11" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.75C0 1.28587 0.188137 0.840752 0.523023 0.512563C0.85791 0.184375 1.31211 0 1.78571 0H23.2143C23.6879 0 24.1421 0.184375 24.477 0.512563C24.8119 0.840752 25 1.28587 25 1.75C25 2.21413 24.8119 2.65925 24.477 2.98744C24.1421 3.31563 23.6879 3.5 23.2143 3.5H1.78571C1.31211 3.5 0.85791 3.31563 0.523023 2.98744C0.188137 2.65925 0 2.21413 0 1.75ZM0 12.25C0 11.7859 0.188137 11.3408 0.523023 11.0126C0.85791 10.6844 1.31211 10.5 1.78571 10.5H23.2143C23.6879 10.5 24.1421 10.6844 24.477 11.0126C24.8119 11.3408 25 11.7859 25 12.25C25 12.7141 24.8119 13.1592 24.477 13.4874C24.1421 13.8156 23.6879 14 23.2143 14H1.78571C1.31211 14 0.85791 13.8156 0.523023 13.4874C0.188137 13.1592 0 12.7141 0 12.25Z" fill="currentColor"/>
+      </svg>
+    </button>
+   <!-- Responsive Menu -->
+    <nav id="responsive-menu" class="hidden fixed top-0 right-8 w-full h-screen z-50">
+      <div class="flex justify-end px-6 pt-6 text-center md:hidden">
+        <!-- Menu links -->
+        <ul class="flex flex-row gap-2.5 font-medium font-roboto text-[#554e4b]">
+          <li><a href="index.html" class="hover:text-[#726865]">Hem</a></li>
+          <li><a href="projects.html" class="hover:text-[#726865]">Portfolio</a></li>
+        </ul>
+        <!-- Close button -->
+        <button id="menu-close" class="md:hidden fixed top-6 right-6 z-50 text-[#554e4b] cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+       </button>
+     </div>
+    </nav>
+
+<!-- Contact section -->
+<section class="min-h-screen flex items-center justify-center m-10 px-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10 lg:gap-10 mt-16">
+
+    <!-- Contact Section -->
+    <div class="space-y-6 max-w-xl mx-auto">
+        <h1 class="font-zeyada text-[#554e4b] text-5xl">Vill du samarbeta?</h1>
+      <h2 class="font-roboto text-3xl md:text-4xl lg:text-5xl text-[#554e4b]">
+        Låt oss skapa något tillsammans.
+      </h2>
+      <h3 class="font-roboto text-lg text-[#554e4b]">
+        Har du ett projekt i åtanke? Jag är alltid öppen för nya idéer och samarbeten.
+      </h3>
+
+      <!-- Mail -->
+      <div class="flex flex-col space-y-6">
+        <div>
+          <p class="uppercase font-roboto text-[#554e4b] font-medium tracking-widest">E-post</p>
+        <a href="mailto:s-saraw@live.se" class="font-roboto text-[#554e4b] hover:underline">s-saraw@live.se</a>        
+       </div>
+
+        <div>
+          <p class="uppercase font-roboto text-[#554e4b] font-medium tracking-widest">Telefon</p>
+          <p class="font-roboto text-[#554e4b]">073-057 07 44</p>
+        </div>
+
+        <div>
+          <p class="uppercase font-roboto text-[#554e4b] font-medium tracking-widest">Plats</p>
+          <p class="font-roboto text-[#554e4b]">Stockholm, Sverige</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right section, image -->
+    <div class="flex justify-center">
+      <img src="Assets/Images/computer.jpg" class="w-full max-w-lg" alt="Picture of a computer and phone"/>
+    </div>
+   </div>
+  </section>
+ </body>
+</html>
