@@ -1,23 +1,26 @@
 const responsiveMenu = () => {
 
-    const menu = document.querySelector('#responsive-menu')
+    // Get elements from DOM
+    const responsiveMenu = document.querySelector('#responsive-menu')
     const menuButton = document.querySelector('#menu-button')
     const menuClose = document.querySelector('#menu-close')
 
     const openMenu = () => {
-        menu.classList.remove('hidden')
-
+        responsiveMenu.classList.remove('hidden')
         menuButton.classList.add('hidden')
     }
-
+    // Close menu
     const closeMenu = () => {
-        menu.classList.add('hidden')
-
+        responsiveMenu.classList.add('hidden')
         menuButton.classList.remove('hidden')
     }
-
+    // Open menu when click
     menuButton.addEventListener('click', openMenu)
     menuClose.addEventListener('click', closeMenu)
+
+    // Close menu when scrolling
+    window.addEventListener("scroll", closeMenu)
+    
 }
 
 responsiveMenu()
