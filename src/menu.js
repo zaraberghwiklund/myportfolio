@@ -14,7 +14,7 @@ const responsiveMenu = () => {
         responsiveMenu.classList.add('hidden')
         menuButton.classList.remove('hidden')
     }
-    // Open menu when click
+    // Open menu 
     menuButton.addEventListener('click', openMenu)
     menuClose.addEventListener('click', closeMenu)
 
